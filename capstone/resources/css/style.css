@@ -1,0 +1,580 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Roboto", Helvetica, sans-serif;
+  color: #2A3139;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+/* HEADER */
+
+header {
+  width: 60rem;
+  height: 4rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media only screen and (max-width: 480px) {
+  header {
+    width: 100%;
+  }
+}
+
+div.logo {
+  margin-left: 1.5rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+span.logo-academy {
+  color: #DCDDDE;
+}
+
+img.logo-image {
+  height: 3rem;
+  width: auto;
+}
+
+nav.menu {
+  margin-right: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav.menu span {
+  margin: 0 0.5rem;
+  font-family: "Ubuntu";
+  cursor: pointer;
+}
+
+div.header-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  div.logo {
+    display: none;
+  }
+
+  nav.menu {
+    display: none;
+  }
+
+  div.header-mobile {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  div.header-mobile img {
+    cursor: pointer;
+  }
+
+  img.colmar-logo-icon {
+    width: 27px;
+    height: 32px;
+  }
+
+  img.campus-icon {
+    width: 27px;
+    height: 32px;
+  }
+
+  img.online-icon {
+    width: 30px;
+    height: 32px;
+  }
+
+  img.login-icon {
+    width: 24px;
+    height: 32px;
+  }
+}
+
+/* JUMBOTRON */
+
+div.jumbotron {
+  width: 60rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  background-color: #DCDDDE;
+}
+
+div.jumbotron-left {
+  width: 60%;
+  margin: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+img.jumbotron-image {
+  width: 100%;
+  height: auto;
+}
+
+div.jumbotron-right {
+  width: 40%;
+  margin-right: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+div.jumbotron-right h1 {
+  margin: 1rem 0;
+  font-family: "Ubuntu";
+}
+
+div.jumbotron-right h3 {
+  margin: 1rem 0;
+}
+
+div.start-here-button {
+  text-align: center;
+  width: 16rem;
+  margin: 1rem 0;
+  background-color: #6D757C;
+  transition: background-color 0.3s linear;
+  cursor: pointer;
+}
+
+div.start-here-button span {
+  color: #fff;
+  display: block;
+  margin: 0.5rem 0;
+  font-family: "Ubuntu";
+}
+
+div.start-here-button:hover {
+  background-color: #33536D;
+}
+
+@media only screen and (max-width: 480px) {
+  div.jumbotron {
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  div.jumbotron-left {
+    width: 100%;
+    margin: 0;
+  }
+  
+  div.jumbotron-right {
+    width: 100%;
+    margin: 0 1rem;
+    align-items: center;
+  }
+
+  div.jumbotron-right h1 {
+    margin: 2rem 1rem;
+  }
+
+  div.jumbotron-right h3 {
+    margin: 0 1rem;
+  }
+  
+  div.start-here-button {
+    margin: 1.5rem 0 2rem 0;
+  }
+}
+
+/* ANY SECTION */
+
+/* CARD */
+
+div.gray {
+  background-color: #DCDDDE;
+}
+
+div.card {
+  display: flex;
+  align-items: center;
+}
+
+div.card-left {
+  width: 35%; 
+  height: 35%;
+  margin: 1rem;
+  display: flex;
+}
+
+img.card-image {
+  width: 100%;
+  height: 100%;
+}
+
+img.card-image-mobile {
+  width: 100%;
+  height: auto;
+  display: none;
+}
+
+div.card-right {
+  width: 65%;
+  margin-right: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+div.card-right h3 {
+  font-family: "Ubuntu";
+}
+
+div.card-right span {
+  display: block;
+  margin: 0.5rem 0;
+  font-size: 0.875rem;
+}
+
+div.card-right a {
+  color: #6D757C;
+  font-family: "Ubuntu";
+  text-decoration: none;
+  font-size: 0.75rem;
+}
+
+div.card-right a:hover {
+  color: #33536D;
+}
+
+@media only screen and (max-width: 480px) {
+  div.gray {
+    background-color: #fff;
+  }
+
+  div.card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  div.card-left {
+    width: 90%;
+    height: auto;
+    margin: 1rem;
+    display: block;
+  }
+  
+  img.card-image {
+    display: none;
+  }
+  
+  img.card-image-mobile {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  div.card-right {
+    width: 80%;
+    margin: 0 2rem 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  div.card-right-last {
+    margin-bottom: 2rem;
+  }
+  
+  div.card-right span {
+    display: block;
+    margin: 0.5rem 0;
+  }
+}
+
+/* "VERTICAL" CARD */
+
+div.card-vertical {
+  width: 29%;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  background-color: #fff;
+}
+
+img.card-vertical-image {
+  width: 100%;
+  height: auto;
+}
+
+div.card-vertical h3 {
+  margin: 1rem 1rem 0 1rem;
+  font-family: "Ubuntu";
+}
+
+div.card-vertical span {
+  display: block;
+  margin: 0.5rem 1rem 0 1rem;
+  font-size: 0.875rem;
+}
+
+div.card-vertical span.last {
+  margin-bottom: 1.5rem;
+}
+
+@media only screen and (max-width: 480px) {
+  div.card-vertical {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem 0.5rem 0 0.5rem;
+    background-color: #DCDDDE;
+  }
+
+  img.card-vertical-image {
+    display: none;
+  }
+
+  div.card-vertical h3 {
+    margin: 1rem 1rem 1.5rem 1rem;
+  }
+
+  div.card-vertical span {
+    display: none;
+  }
+}
+
+/* FIRST SECTION */
+
+div.first-section {
+  width: 60rem;
+  margin: 0 auto;
+  display: flex;
+  background-color: #fff;
+}
+
+@media only screen and (max-width: 480px) {
+  div.first-section {
+    width: 100%;
+  }
+}
+
+div.first-section-left {
+  width: 60%;
+  margin: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 480px) {
+  div.first-section-left {
+    display: none;
+  }
+}
+
+div.first-section-left h2 {
+  margin-top: 2rem;
+  font-family: "Ubuntu";
+}
+
+div.first-section-left span {
+  display: block;
+  margin-top: 1.5rem;
+}
+
+div.first-section-left span.author {
+  font-weight: 300;
+  font-style: italic;
+  font-size: 0.875rem;
+}
+
+img.first-section-image {
+  width: 100%;
+  height: auto;
+}
+
+div.first-section-right {
+  width: 40%;
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 480px) {
+  div.first-section-right {
+    width: 100%;
+  }
+}
+
+/* SECOND SECTION */
+
+div.second-section-container {
+  width: 60rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #DCDDDE;
+}
+
+div.second-section-title {
+  width: 60rem;
+  text-align: center;
+}
+
+div.second-section-title h2 {
+  margin-top: 2rem;
+  font-family: "Ubuntu";
+}
+
+div.second-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1rem 3.5rem;
+}
+
+@media only screen and (max-width: 480px) {
+  div.second-section-container {
+    border-top: 1px solid #DCDDDE;
+    width: 100%;
+    background-color: #fff;
+  }
+  
+  div.second-section-title {
+    width: 100%; 
+  }
+  
+  div.second-section {
+    margin: 1.5rem 0 2rem 0;
+  }
+}
+
+/* THIRD SECTION */
+
+div.third-section-container {
+  width: 60rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+div.third-section-title {
+  width: 60rem;
+  text-align: center;
+}
+
+div.third-section-title h2 {
+  margin-top: 2rem;
+  font-family: "Ubuntu";
+}
+
+div.third-section {
+  width: 60rem;
+  display: flex;
+}
+
+div.third-section-left {
+  width: 60%;
+  margin: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+div.third-section-left h2 {
+  margin-top: 2rem;
+  font-family: "Ubuntu";
+}
+
+div.third-section-left span {
+  display: block;
+  margin-top: 1.5rem;
+}
+
+div.third-section-right {
+  width: 40%;
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 480px) {
+  div.third-section-container {
+    border-top: 1px solid #DCDDDE;
+    width: 100%;
+  }
+
+  div.third-section-title {
+    width: 100%;
+  }
+
+  div.third-section {
+    width: 100%;
+  }
+
+  div.third-section-left {
+    width: 100%;
+    margin: 1rem 0 1.5rem 0;
+  }
+
+  div.third-section-left h2 {
+    display: none;
+  }
+  
+  div.third-section-left span {
+    display: none;
+  }
+
+  div.third-section-right {
+    display: none;
+  }
+}
+
+/* FOOTER */
+
+footer {
+  width: 60rem;
+  height: 4rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #DCDDDE;
+}
+
+div.copyright {
+  margin: 1rem 0 0 1.5rem;
+  font-weight: 300;
+  font-size: 0.875rem;
+}
+
+div.terms {
+  margin: 1rem 1rem 0 0;
+  display: flex;
+}
+
+div.terms span {
+  display: block;
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 480px) {
+  footer {
+    width: 100%;
+    height: auto;
+  }
+
+  div.copyright {
+    margin: 1rem;
+  }
+
+  div.terms {
+    display: none;
+  }
+}
